@@ -5,4 +5,7 @@ ScrollReveal().reveal('.img-principal');
 ScrollReveal().reveal('.title-about');
 ScrollReveal().reveal('.title-sections', {delay: 250});
 ScrollReveal().reveal('.img-about', {delay: 500});
+ScrollReveal().reveal('.img-form', {delay: 500});
+ScrollReveal().reveal('.form', {delay: 1000});
+ScrollReveal().reveal('.text-form', {delay: 1000});
 ScrollReveal().reveal('.text-about', {delay: 1000});
