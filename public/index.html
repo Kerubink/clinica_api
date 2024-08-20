@@ -58,24 +58,45 @@
                 <img src="/public/img/data-report-animate.svg" class="img-form" alt="">
                 <p class="text-form">Preencha seus dados como paciente para ficar na nossa base de dados.</p>
             </article>
-            <form class="form" action="">
-                <input type="text" name="nome">
-                <input type="email" name="email">
-                <input type="date" name="data-nascimento">
-                <input type="number" name="telefone">
-                <input type="text" name="endereco">
-                <button class="btn-form">Enviar</button>
+            <form class="form" id="patient-form">
+                <label for="name">Nome:</label><br>
+                <input type="text" id="name" name="name" required><br>
+        
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+        
+                <label for="dataNascimento">Data de Nascimento:</label><br>
+                <input type="date" id="dataNascimento" name="dataNascimento" required><br>
+        
+                <label for="telefone">Telefone:</label><br>
+                <input type="text" id="telefone" name="telefone" required><br>
+        
+                <label for="endereco">Endereço:</label><br>
+                <input type="text" id="endereco" name="endereco" required><br><br>
+        
+                <button type="submit">Adicionar Paciente</button>
             </form>
         </div>
     </section>
     <section class="patients-section">
         <h3 class="title-sections">Pacientes</h3>
-        <div class="cards">
-            <div class="card">
-
-            </div>
-        </div>
+        <table id="patient-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Data de Nascimento</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </section>
+
+    <script src="/public/js/config.js"></script>
     <script src="/public/js/script.js"></script>
 </body>
 
