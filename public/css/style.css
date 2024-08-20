@@ -158,7 +158,9 @@ body{
     flex-direction: column;
     gap: 15px;
 }
-
+.form label{
+    margin: 0;
+}
 .form input {
     padding: 10px;
     font-size: 16px;
@@ -221,8 +223,43 @@ body{
     transition: all.4s;
 }
 
-table, th, td {
-    border: 1px solid black;
+.styled-table {
+    width: 100%;
     border-collapse: collapse;
-    padding: 8px;
+    font-family: 'Arial', sans-serif;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header Styles */
+.styled-table thead tr {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Body Styles */
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #007bff;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
 }
