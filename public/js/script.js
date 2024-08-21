@@ -9,3 +9,4 @@ ScrollReveal().reveal('.img-form', {delay: 500});
 ScrollReveal().reveal('.form', {delay: 1000});
 ScrollReveal().reveal('.text-form', {delay: 1000});
 ScrollReveal().reveal('.text-about', {delay: 1000});
+ScrollReveal().reveal('.table', {delay: 1000});
